@@ -16,9 +16,9 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @Column(unique = true, nullable = false)
+    @Column(name = "mail", unique = true, nullable = false)
     private String mail;
 
-    @Column(nullable = false)
+    @Column(name = "password", nullable = false)
     private String password;
 }
